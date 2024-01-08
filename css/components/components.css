@@ -1,0 +1,24 @@
+.primary-button {
+  display: inline-block;
+  background: linear-gradient(#ffbb00, #f2a50c);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.primary-button:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 600px) {
+  .primary-button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+}
