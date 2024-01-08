@@ -1,0 +1,83 @@
+.tecnologia-bg {
+    background-color: var(--cor-11);
+    box-shadow: inset 0 5rem var(--cor-0), inset 0 -5rem var(--cor-0);
+}
+
+.tecnologia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.tecnologia-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.tecnologia-conteudo {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.tecnologia-tag {
+    margin-bottom: 1.25rem;
+    display: block;
+}
+
+.tecnologia-titulo {
+    margin-bottom: 2rem;
+}
+
+.tecnologia-descricao {
+    margin-bottom: 1.25rem;
+}
+
+.tecnologia-link {
+    margin-bottom: 5rem;
+}
+
+.tecnologia-vantagens {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.vantagens-titulo {
+    margin-bottom: .5rem;
+    width: max-content;
+}
+
+.vantagens-icone {
+    width: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 800px) {
+    .tecnologia-bg{
+        box-shadow: initial;
+    }
+
+    .tecnologia {
+        grid-template-columns: 1fr;
+    }
+
+    .tecnologia-conteudo {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+    }
+
+    .tecnologia-img {
+        display: none;
+    }
+
+    .tecnologia-link {
+        margin-bottom: 3.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .tecnologia-vantagens{
+        flex-direction: column;
+    }
+}
