@@ -1,0 +1,21 @@
+.depoimento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--cor-p1);
+}
+
+.depoimento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.depoimento-conteudo {
+    padding: 2.5rem 2.5rem 5rem 5rem;
+    align-self: end;
+}
+
+.depoimento-citacao {
+    font-family: "Merriweather";
+}
