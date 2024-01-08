@@ -1,5 +1,8 @@
 /* GLOBAL */
 @import '/css/global/global.css';
+@import '/css/components/typography.css';
+@import '/css/components/colors.css';
+
 @import '/css/global/header.css';
 
 /* COMPONENTS */
