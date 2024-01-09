@@ -16,10 +16,27 @@
   text-transform: uppercase;
   color: var(--cor-p5);
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
 }
 
 .primary-button:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.secundary-button {
+  display: inline-block;
+  background: var(--cor-10);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color: var(--cor-2);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
+}
+
+.secundary-button:hover {
+  background: var(--cor-9);
 }
 
 .primary-link {
