@@ -58,6 +58,30 @@
   background-color: currentColor;
 }
 
+/* Titulos Internos */
+.titulo-bg {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  background-color: var(--cor-11);
+}
+
+.titulo-tag {
+  margin-bottom: .25rem;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .titulo-tag {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
+
 @media (max-width: 600px) {
   .primary-button {
     padding: 0.75rem 1rem;

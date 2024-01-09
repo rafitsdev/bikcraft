@@ -19,4 +19,7 @@
 @import "/css/bicicletas/bicicletas-lista.css";
 
 /* Seguros */
-@import "/css/seguros/seguros.css"
+@import "/css/seguros/seguros.css";
+
+/* Termos e Condições */
+@import "/css/termos/termos.css";
