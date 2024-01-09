@@ -36,6 +36,10 @@
     gap: 2rem;
 }
 
+.footer-informacoes ul li {
+    margin-bottom: 1rem;
+}
+
 .footer a:hover {
     color: var(--cor-0);
 }
