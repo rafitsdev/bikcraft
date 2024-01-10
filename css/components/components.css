@@ -39,6 +39,37 @@
   background: var(--cor-9);
 }
 
+.arrow-button {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#ffbb00, #f2a50c);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color: var(--cor-p5);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
+}
+
+.arrow-button:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.arrow-button::after {
+  content: "";
+  display: inline-block;
+  width: 1.125rem;
+  height: .625rem;
+  margin-left: .75rem;
+  background: url("/img/icones/seta.svg");
+  transition: transform .2s;
+}
+
+.arrow-button:hover::after {
+  transform: translateX(.25rem);
+}
+
 .primary-link {
   display: inline-block;
   color: var(--cor-p1);
