@@ -15,6 +15,10 @@ blockquote {
   margin: 0;
 }
 
+button {
+  border: none;
+}
+
 ul {
   padding: 0;
   list-style: none;
