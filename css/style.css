@@ -26,6 +26,7 @@
 
 /* Contato */
 @import './contato/contato.css';
+@import './contato/lojas.css';
 
 /* Seguros */
 @import './seguros/seguros.css';
