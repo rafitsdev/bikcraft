@@ -7,9 +7,10 @@
   <meta name="description" content="Termos e Condições" />
   <title>Termos e Condições | Bikcraft</title>
 
-  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 
@@ -42,7 +43,7 @@
     </div>
 
     <div class="seguros container">
-      <div class="seguros-item">
+      <div class="seguros-item fadeInLeft" data-anime="200">
         <h3 class="seguros-plano font-1-xl cor-6">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199 <span class="seguros-plano-tempo font-1-xs cor-6">mensal</span></span>
         <ul class="seguros-vantagens font-2-m cor-0">
@@ -51,10 +52,10 @@
           <li>Suporte das 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="secundary-button seguros-botao" href="./orcamento.html">Inscreva-se</a>
+        <a class="secundary-button seguros-botao" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
 
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="400">
         <h3 class="seguros-plano font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-0">R$ 299 <span class="seguros-plano-tempo font-1-xs cor-6">mensal</span></span>
         <ul class="seguros-vantagens font-2-m cor-0">
@@ -65,7 +66,7 @@
           <li>desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="primary-button seguros-botao" href="./orcamento.html">Inscreva-se</a>
+        <a class="primary-button seguros-botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
       </div>
     </div>
   </main>
@@ -121,46 +122,60 @@
 
     <dl>
       <div>
-        <dt class="font-1-m-b">Qual forma de pagamento vocês aceitam?</dt>
-        <dd class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American
+        <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês
+            aceitam?</button></dt>
+        <dd id="pergunta1" class="font-2-s cor-9 ativa">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard,
+          ELO e American
           Express. Para pagamento à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Como posso entrar em contato?</dt>
-        <dd class="font-2-s cor-9">Você pode falar com um de nossos atendentes pelo telefone ou com nosso SAC via email,
+        <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em
+            contato?</button></dt>
+        <dd id="pergunta2" class="font-2-s cor-9">Você pode falar com um de nossos atendentes pelo telefone ou com nosso
+          SAC via email,
           ver o quão bem a Bikcraft tem feito para nossos clientes pelo nosso Instagram e Facebook e ainda acompanhar as
           novidades e vídeos de nossos Head Engineers pelo canal no Youtube. Tudo disponível no rodapé de nosso site.
         </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Vocês possuem algum desconto?</dt>
-        <dd class="font-2-s cor-9">Temos descontos de até 13% na compra da primeira Bicicleta Elétrica Bikcraft©, e para
+        <dt><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum
+            desconto?</button></dt>
+        <dd id="pergunta3" class="font-2-s cor-9">Temos descontos de até 13% na compra da primeira Bicicleta Elétrica
+          Bikcraft©, e para
           clientes assinantes do PLANO OURO temos descontos de até 22%. E também criamos um sistema de descontos
           cumulativo para assinantes onde a cada produto de manutenção adquirido (fluído de freios, produtos para
           limpeza Bikcraft©, etc) o nosso assinante ganha uma porcentagem de cashback disponível como saldo na loja
           virtual da Bikcraft ou para saque.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Qual a garantia que possuo?</dt>
-        <dd class="font-2-s cor-9">No PLANO PRATA, você recebe 6 meses de garantia na compra de sua PRIMEIRA BIKCRAFT no
+        <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Qual a garantia que
+            possuo?</button></dt>
+        <dd id="pergunta4" class="font-2-s cor-9">No PLANO PRATA, você recebe 6 meses de garantia na compra de sua
+          PRIMEIRA BIKCRAFT no
           caso da não recuperação em cenário de roubo ou furto, ou a troca de 2 (duas) vezes ao ano em caso de problema
           estrutural ou mecânico. No PLANO OURO você recebe garantia vitalícia durante a validade de seu plano em
           cenário de roubo ou furto, ou a troca de 5 (cinco) vezes ao ano em caso de problema estrutural ou mecânico.
         </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
-        <dd class="font-2-s cor-9">Claro! Conseguimos gerar um boleto para você no dia de vencimento de sua escolha via
+        <dt><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no
+            boleto?</button></dt>
+        <dd id="pergunta5" class="font-2-s cor-9">Claro! Conseguimos gerar um boleto para você no dia de vencimento de
+          sua escolha via
           PagSeguro, o que deixa a transação totalmente segura e confiável.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Quantas trocas posso fazer no ano?</dt>
-        <dd class="font-2-s cor-9">No PLANO PRATA você tem direito a 2 (duas) trocas por ano. Já no PLANO OURO, você tem
+        <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer no
+            ano?</button></dt>
+        <dd id="pergunta6" class="font-2-s cor-9">No PLANO PRATA você tem direito a 2 (duas) trocas por ano. Já no PLANO
+          OURO, você tem
           direito a 5 (cinco) trocas po ano.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Qual Bikcraft devo escolher para o meu tamanho?</dt>
-        <dd class="font-2-s cor-9">Cada Bikcraft é feita sob medida para nossos clientes. Então não se preocupe, nós
+        <dt><button class="font-1-m-b" aria-controls="pergunta7" aria-expanded="false">Qual Bikcraft devo escolher para
+            o meu tamanho?</button></dt>
+        <dd id="pergunta7" class="font-2-s cor-9">Cada Bikcraft é feita sob medida para nossos clientes. Então não se
+          preocupe, nós
           vamos trazer a melhor experiência de ciclismo para você independente de sua escolha.</dd>
       </div>
     </dl>
@@ -204,6 +219,8 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
