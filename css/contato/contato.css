@@ -20,8 +20,7 @@
 
 .contato-formulario {
   border-radius: 0 .3125rem .3125rem 0;
-  background-color: var(--cor-0);
-  background: url("../../img/dec/bottom-right.svg") no-repeat bottom 1.25rem right 1.25rem;
+  background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat bottom 1.25rem right 1.25rem;
 }
 
 .contato-dados h2 {
